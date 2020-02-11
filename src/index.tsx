@@ -7,13 +7,12 @@ import Router from './Router';
 import Reducers from './modules';
 
 const syncStore = {
-  states: [],
+  states: ['prefectures'],
   namespace: 'resas',
   disableWarnings: true,
 };
 
 const createStoreWithMiddleWare = applyMiddleware(save(syncStore))(createStore);
-
 const store = createStoreWithMiddleWare(Reducers, load(syncStore));
 
 ReactDOM.render((
