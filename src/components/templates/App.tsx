@@ -3,6 +3,7 @@ import Header from '../organisms/Header';
 import { Prefecture } from '../../types';
 import Prefectures from '../organisms/containers/Prefectures';
 import HighCharts from '../organisms/containers/HighCharts';
+import Loading from '../organisms/Loading';
 import './App.sass';
 
 type Props = {
@@ -17,7 +18,7 @@ const App: React.FC<Props> = ({ prefectures }) => (
       {
         prefectures.length > 0
           ? <Prefectures prefectures={prefectures} />
-          : <span>取得中...</span>
+          : <Loading text="取得中..." />
       }
     </div>
     <div className="App__highcharts">
