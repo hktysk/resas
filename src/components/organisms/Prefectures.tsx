@@ -3,11 +3,13 @@ import CheckBox from '../molecules/CheckBox';
 import { Prefecture } from '../../types';
 import './Prefectures.sass';
 
-type Props = {
-  prefectures: Prefecture[]
+export type Props = {
+  prefectures: Prefecture[],
+  selectedPrefectures: string[],
+  onChange: (prefecture: Prefecture) => void
 };
 
-const Prefectures: React.FC<Props> = ({ prefectures }) => (
+const Prefectures: React.FC<Props> = ({ prefectures, onChange, selectedPrefectures }) => (
   <div className="Prefectures">
     {
       prefectures.map((pref: Prefecture) => (
@@ -17,8 +19,8 @@ const Prefectures: React.FC<Props> = ({ prefectures }) => (
         >
           <CheckBox
             text={pref.prefName}
-            onChange={() => {}}
-            checked={false}
+            onChange={() => onChange(pref)}
+            checked={selectedPrefectures.includes(pref.prefName)}
           />
         </div>
       ))

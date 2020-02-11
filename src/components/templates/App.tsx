@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../organisms/Header';
 import { Prefecture } from '../../types';
-import Prefectures from '../organisms/Prefectures';
+import Prefectures from '../organisms/containers/Prefectures';
 import './App.sass';
 
 type Props = {

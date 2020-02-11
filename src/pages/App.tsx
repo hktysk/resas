@@ -15,7 +15,7 @@ const App: React.FC = () => {
           .then((r: any) => r.json())
           .then((data: any): Prefecture[] => data.map((v: any): Prefecture => ({
             prefName: v.prefName,
-            prefCode: v.PrefCode,
+            prefCode: v.prefCode,
           })));
       } catch (_) {
         alert('都道府県を取得できませんでした。通信環境をご確認ください。');

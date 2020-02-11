@@ -11,7 +11,13 @@ describe('動的にチェックボックスを生成', () => {
 
   let dom: ShallowWrapper;
   beforeEach(() => {
-    dom = shallow(<Prefectures prefectures={prefectures} />);
+    dom = shallow(
+      <Prefectures
+        prefectures={prefectures}
+        selectedPrefectures={prefectures.map((v) => v.prefName)}
+        onChange={(_: Prefecture) => Boolean(_)}
+      />,
+    );
   });
 
   it('チェックボックスを生成できているか', () => {
