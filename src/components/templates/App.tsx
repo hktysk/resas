@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../organisms/Header';
 import { Prefecture } from '../../types';
 import Prefectures from '../organisms/containers/Prefectures';
+import HighCharts from '../organisms/containers/HighCharts';
 import './App.sass';
 
 type Props = {
@@ -18,6 +19,9 @@ const App: React.FC<Props> = ({ prefectures }) => (
           ? <Prefectures prefectures={prefectures} />
           : <span>取得中...</span>
       }
+    </div>
+    <div className="App__highcharts">
+      <HighCharts />
     </div>
   </div>
 );
