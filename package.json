@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hktysk/resas/issues"
   },
-  "homepage": "https://github.com/hktysk/resas#readme"
+  "homepage": "https://github.com/hktysk/resas#readme",
+  "dependencies": {
+    "typescript": "^3.7.5"
+  }
 }
