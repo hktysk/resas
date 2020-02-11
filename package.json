@@ -1,0 +1,19 @@
+{
+  "name": "resas",
+  "version": "1.0.0",
+  "description": "都道府県の総人口をグラフで表すアプリケーション",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hktysk/resas.git"
+  },
+  "author": "hktysk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hktysk/resas/issues"
+  },
+  "homepage": "https://github.com/hktysk/resas#readme"
+}
