@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hktysk/resas#readme",
   "dependencies": {
+    "@types/node": "^13.7.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "cross-env": "^7.0.0",
