@@ -53,10 +53,11 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(css)$/,
+        test: /\.(css|sass)$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ],
         exclude: '/node_modules/'
       },
