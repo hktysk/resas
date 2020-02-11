@@ -4,6 +4,7 @@
   "description": "都道府県の総人口をグラフで表すアプリケーション",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,6 +33,7 @@
     "typescript": "^3.7.5",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^4.0.0-beta.2"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
   }
 }
