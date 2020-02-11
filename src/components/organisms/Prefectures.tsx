@@ -2,6 +2,7 @@ import React from 'react';
 import CheckBox from '../molecules/CheckBox';
 import { Prefecture } from '../../types';
 import './Prefectures.sass';
+import './Prefectures.media.sass';
 
 export type Props = {
   prefectures: Prefecture[],
