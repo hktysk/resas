@@ -1,7 +1,8 @@
 import React from 'react';
+import Template from '../components/templates/App';
 
 const App: React.FC = () => (
-  <div data-test="init">OK, React</div>
+  <Template />
 );
 
 export default App;

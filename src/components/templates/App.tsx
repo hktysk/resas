@@ -1,0 +1,10 @@
+import React from 'react';
+import Header from '../organisms/Header';
+
+const App: React.FC = () => (
+  <div className="App">
+    <Header />
+  </div>
+);
+
+export default App;
