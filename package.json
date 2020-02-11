@@ -72,6 +72,7 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.5",
     "redux-localstorage-simple": "^2.1.6",
+    "resv": "^1.0.4",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "ts-jest": "^25.2.0",
