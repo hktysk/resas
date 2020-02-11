@@ -1,6 +1,7 @@
 import React from 'react';
 import HighCharts from 'highcharts';
 import HighChartsReact from 'highcharts-react-official';
+import Loading from './Loading';
 
 export type Series = {
   name: string
@@ -48,9 +49,7 @@ const initOptions: any & {
 
 const Charts: React.FC<Props> = ({ categories, series }) => {
   if (series.length === 0) {
-    return (
-      <span>都道府県を選択してください。</span>
-    );
+    return (<Loading text="都道府県を選択してください。" />);
   }
 
   const options = { ...initOptions };
