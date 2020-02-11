@@ -5,6 +5,7 @@ import Prefectures from '../organisms/containers/Prefectures';
 import HighCharts from '../organisms/containers/HighCharts';
 import Loading from '../organisms/Loading';
 import './App.sass';
+import './App.media.sass';
 
 type Props = {
   prefectures: Prefecture[]

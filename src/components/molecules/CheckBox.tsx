@@ -1,5 +1,6 @@
 import React from 'react';
 import './CheckBox.sass';
+import './CheckBox.media.sass';
 
 type Props = {
   text: string

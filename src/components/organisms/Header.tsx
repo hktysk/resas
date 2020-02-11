@@ -1,6 +1,7 @@
 import React from 'react';
 import GraphIcon from '../atoms/graph.png';
 import './Header.sass';
+import './Header.media.sass';
 
 const Header: React.FC = () => (
   <header className="Header">
